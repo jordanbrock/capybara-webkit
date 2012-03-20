@@ -121,6 +121,11 @@ class Capybara::Driver::Webkit
   def cookies
     @cookie_jar ||= CookieJar.new(browser)
   end
+  
+  def invalid_element_errors
+    []
+ 	end
+
 
   private
 
